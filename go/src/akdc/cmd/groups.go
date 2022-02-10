@@ -5,8 +5,6 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/spf13/cobra"
 )
 
@@ -16,7 +14,7 @@ var groupsCmd = &cobra.Command{
 	Short: "list Azure resource groups",
 	Long: `list Azure resource groups`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("groups called")
+		shellExec("cat main.go | grep -e cmd")
 	},
 }
 

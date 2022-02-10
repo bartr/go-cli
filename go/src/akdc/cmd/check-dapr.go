@@ -6,7 +6,6 @@ package cmd
 
 import (
 	"fmt"
-
 	"github.com/spf13/cobra"
 )
 
@@ -16,7 +15,11 @@ var daprCmd = &cobra.Command{
 	Short: "check dapr status on each cluster",
 	Long: `check dapr status on each cluster`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("check-dapr called")
+		lines := getAllIps()
+
+		for _, line := range lines {
+			fmt.Println(line)
+		}
 	},
 }
 

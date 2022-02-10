@@ -14,5 +14,6 @@ RUN echo "$(date)    docker build started" >> /home/$USERNAME/status && \
     wget https://go.dev/dl/go1.17.6.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz && \
     rm -f go1.17.6.linux-amd64.tar.gz && \
+    echo "compinit" >> /home/${USERNAME}/.zshrc && \
     echo "$(date)    docker build complete" >> /home/$USERNAME/status && \
     chown -R $USERNAME:$USERNAME /home/$USERNAME

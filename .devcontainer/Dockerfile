@@ -6,8 +6,7 @@ FROM ghcr.io/cse-labs/k3d:latest
 # some images require specific values
 ARG USERNAME=vscode
 
-ENV PATH $PATH:/usr/local/bin/go:/workspaces/go-cli/go/bin
-ENV GOPATH /workspaces/go-cli/go
+ENV PATH $PATH:/usr/local/go/bin:/workspaces/go-cli/go/bin
 
 RUN echo "$(date)    docker build started" >> /home/$USERNAME/status && \
     mkdir -p /home/vscode/go && \

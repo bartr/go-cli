@@ -19,7 +19,6 @@ var groupsCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(groupsCmd)
 
 	// Here you will define your flags and configuration settings.
 

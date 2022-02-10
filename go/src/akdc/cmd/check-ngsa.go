@@ -21,7 +21,6 @@ var checkNgsaCmd = &cobra.Command{
 }
 
 func init() {
-	checkCmd.AddCommand(checkNgsaCmd)
 
 	// Here you will define your flags and configuration settings.
 

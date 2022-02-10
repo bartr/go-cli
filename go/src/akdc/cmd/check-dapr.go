@@ -24,7 +24,6 @@ var daprCmd = &cobra.Command{
 }
 
 func init() {
-	checkCmd.AddCommand(daprCmd)
 
 	// Here you will define your flags and configuration settings.
 

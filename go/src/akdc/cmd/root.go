@@ -32,6 +32,11 @@ func Execute() {
 }
 
 func init() {
+	rootCmd.AddCommand(checkCmd)
+	rootCmd.AddCommand(fluxCmd)
+	rootCmd.AddCommand(sshCmd)
+	rootCmd.AddCommand(groupsCmd)
+
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.

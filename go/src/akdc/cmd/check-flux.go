@@ -21,7 +21,6 @@ var checkFluxCmd = &cobra.Command{
 }
 
 func init() {
-	checkCmd.AddCommand(checkFluxCmd)
 
 	// Here you will define your flags and configuration settings.
 

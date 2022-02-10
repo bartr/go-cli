@@ -21,7 +21,6 @@ var checkRadiusCmd = &cobra.Command{
 }
 
 func init() {
-	checkCmd.AddCommand(checkRadiusCmd)
 
 	// Here you will define your flags and configuration settings.
 

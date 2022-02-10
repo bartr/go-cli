@@ -16,7 +16,8 @@ var fluxCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(fluxCmd)
+	fluxCmd.AddCommand(fluxReconcileCmd)
+	fluxCmd.AddCommand(fluxSetupCmd)
 
 	// Here you will define your flags and configuration settings.
 

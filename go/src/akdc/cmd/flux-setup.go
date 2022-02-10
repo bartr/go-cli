@@ -12,7 +12,7 @@ import (
 
 // reconcileCmd represents the reconcile command
 var fluxSetupCmd = &cobra.Command{
-	Use:   "reconcile",
+	Use:   "setup",
 	Short: "setup flux on each cluster",
 	Long: `setup flux on each cluster`,
 	Run: func(cmd *cobra.Command, args []string) {
@@ -21,7 +21,6 @@ var fluxSetupCmd = &cobra.Command{
 }
 
 func init() {
-	fluxCmd.AddCommand(fluxSetupCmd)
 
 	// Here you will define your flags and configuration settings.
 

@@ -21,7 +21,6 @@ var sshCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(sshCmd)
 
 	// Here you will define your flags and configuration settings.
 

@@ -16,7 +16,10 @@ var checkCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(checkCmd)
+	checkCmd.AddCommand(daprCmd)
+	checkCmd.AddCommand(checkFluxCmd)
+	checkCmd.AddCommand(checkNgsaCmd)
+	checkCmd.AddCommand(checkRadiusCmd)
 
 	// Here you will define your flags and configuration settings.
 

@@ -21,7 +21,6 @@ var fluxReconcileCmd = &cobra.Command{
 }
 
 func init() {
-	fluxCmd.AddCommand(fluxReconcileCmd)
 
 	// Here you will define your flags and configuration settings.
 
